@@ -16,6 +16,7 @@ WORKDIR ${USER_HOME}
 
 # Set a non-root user
 USER ${USER_ID}
+USER 10001
 
 # Copy the rest of the application code to the container
 COPY --chown=${USER}:${USER_GROUP} . .
